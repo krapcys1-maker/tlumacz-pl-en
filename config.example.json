@@ -1,0 +1,32 @@
+{
+  "backend": "google",
+  "fallback_backend": "google",
+  "hotkeys": [
+    {"keys": "ctrl+alt+t", "from": "pl", "to": "en"}
+  ],
+  "tone": "natural and casual, like a chat message between colleagues",
+  "restore_clipboard": true,
+  "backends": {
+    "deepseek": {
+      "label": "DeepSeek (AI)",
+      "type": "openai",
+      "api_key": "",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-flash",
+      "temperature": 1.0,
+      "extra_body": {"thinking": {"type": "disabled"}},
+      "timeout": 30
+    },
+    "google": {
+      "label": "Google Translate (bez AI, bez klucza)",
+      "type": "google"
+    },
+    "deepl": {
+      "label": "DeepL (bez AI, darmowy klucz)",
+      "type": "deepl",
+      "api_key": "",
+      "english_variant": "EN-US"
+    }
+  }
+}

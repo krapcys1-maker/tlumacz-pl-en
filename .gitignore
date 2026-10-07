@@ -1,0 +1,7 @@
+# prywatne ustawienia z kluczami API - w repo jest config.example.json
+config.json
+
+.venv/
+__pycache__/
+*.pyc
+tlumacz.log*
